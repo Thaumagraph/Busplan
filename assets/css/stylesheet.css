@@ -1,11 +1,30 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  .left {
+    width: 100%;
+  }
+}
+
 #busPlan {
   ul {
-    list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 7fr 1fr;
+    background-color: #ff0000;
+    list-style: none;
+    * {
+      border-radius: 50%;
+      background-color: yellow;
+      padding: 1em;
+    }
+  }
+
+  * {
+    margin: 0;
   }
 
   ul:first-child {
+    background-color: aquamarine;
     font-weight: bold;
   }
 }
